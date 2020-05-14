@@ -1,0 +1,1 @@
+PowerShell.exe -ExecutionPolicy Bypass -File C:\zabbix\bin\win64\register_ActivationCheck.ps1
