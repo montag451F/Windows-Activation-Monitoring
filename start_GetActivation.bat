@@ -1,1 +1,1 @@
-PowerShell.exe -ExecutionPolicy Bypass -File C:\zabbix\bin\win64\start_GetActivation.ps1
+PowerShell.exe -ExecutionPolicy Bypass -File C:\WindowsActivationStatus\start_GetActivation.ps1
