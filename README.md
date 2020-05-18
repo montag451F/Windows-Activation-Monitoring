@@ -12,6 +12,6 @@ evaluateGetActivation.ps1 - берет строку из activation.txt и ср�
 activation.txt - содержит в себе статус активации в виде строки
 
 В конфиге заббикса:
-UserParameter=activation.check,powershell.exe -executionpolicy bypass -command "C:\zabbix\bin\win64\evaluateGetActivation"
+UserParameter=activation.check,powershell.exe -executionpolicy bypass -command "C:\WindowsActivationStatus\evaluateGetActivation"
 
-PS: Содержимое этой директории должно быть скопировано в C:\zabbix\bin\win64
+PS: Содержимое этой директории должно быть скопировано в C:\WindowsActivationStatus
