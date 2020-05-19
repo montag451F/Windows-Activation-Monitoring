@@ -1,0 +1,1 @@
+PowerShell.exe -ExecutionPolicy Bypass -File C:\WindowsActivationStatus\getConfStatus.ps1 | %{ $_.Split(':')[1]; } | ForEach-object { $_.TrimStart(" ") } 2> $null > C:\WindowsActivationStatus\ConfCheck.txt
