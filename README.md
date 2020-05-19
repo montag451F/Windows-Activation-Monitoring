@@ -1,5 +1,6 @@
 # Windows-Activation-Monitoring
-# Obtain windows activation status via powershell and send to zabbix server
+Obtain windows activation status via powershell and send to zabbix server.
+
 
 GetWinActivationStatus.ps1 - запрашивает у системы инфу об ативации
 
