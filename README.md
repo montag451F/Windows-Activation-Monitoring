@@ -10,8 +10,13 @@ start_register_ActivationCheck.bat - запускает register_ActivationCheck
 evaluateGetActivation.ps1 - берет строку из activation.txt и сравнивает с эталонной, отдает 0 или 1,
 используется забиксом
 activation.txt - содержит в себе статус активации в виде строки
+ConfCheck.txt - нужен для проверки строки UserParameter в конфиге заббикса
+getConfStatus.ps1 - грепает конфиг заббикса на предмет строки UserParameter
+trimConfStatus.ps1 - использует getConfStatus.ps1, убирает лишние данные поша, сохраняет результат в ConfCheck.txt
+evaluateConf.ps1 - берет данные из ConfCheck.txt и сравнивает эталоном, если совпадение есть, то выдает exit 1, в противном случае exit 0
 
-В конфиге заббикса:
-UserParameter=activation.check,powershell.exe -executionpolicy bypass -command "C:\WindowsActivationStatus\evaluateGetActivation"
+
+Параметр zabbix для проверки активации:
+UserParameter=activation.check,powershell.exe -executionpolicy bypass -command C:\WindowsActivationStatus\evaluateGetActivation
 
 PS: Содержимое этой директории должно быть скопировано в C:\WindowsActivationStatus
