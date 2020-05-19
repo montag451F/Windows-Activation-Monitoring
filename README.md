@@ -26,6 +26,8 @@ trimConfStatus.ps1 - использует getConfStatus.ps1, убирает ли
 
 evaluateConf.ps1 - берет данные из ConfCheck.txt и сравнивает эталоном, если совпадение есть, то выдает exit 1, в противном случае exit 0
 
+checkTaskExist.ps1 - проверяет есть ли задача "Activation Check" в планировщике
+
 
 Параметр zabbix для проверки активации:
 UserParameter=activation.check,powershell.exe -executionpolicy bypass -command C:\WindowsActivationStatus\evaluateGetActivation
