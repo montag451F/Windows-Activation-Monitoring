@@ -28,6 +28,8 @@ evaluateConf.ps1 - берет данные из ConfCheck.txt и сравнив�
 
 checkTaskExist.ps1 - проверяет есть ли задача "Activation Check" в планировщике
 
+evaluateZabbixRestart.ps1 - проверяет наличие файла restart, используется puppet
+
 
 Параметр zabbix для проверки активации:
 UserParameter=activation.check,powershell.exe -executionpolicy bypass -command C:\WindowsActivationStatus\evaluateGetActivation
